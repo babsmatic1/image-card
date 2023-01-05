@@ -6,7 +6,9 @@
 body {
     padding-top: 90px;
     margin: 0;
-    background: url(images\ \(1\).jpeg) no-repeat;
+    background: url(images\ \(1\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +28,8 @@ body {
 }
 
 .container2{
-    background: url(images.jpeg) no-repeat;
+    background: url(./bg.png);
+    background-size: cover;
     width: 410px;  
     height: 190px;
     top: 0%;
@@ -49,10 +52,10 @@ h3{
 .buds img{
     text-align: center;
     margin-top: 90px;
-    border-radius: 50px;
+    border-radius: 50%;
+    border: 5px inset grey;
     vertical-align: middle;
 }
-
 
 .text2 ul {
     display: flex;
@@ -69,4 +72,18 @@ h3{
 .hone{
     font-family: cursive;
     color: gray;
+}
+
+
+@media screen and (max-width:600px){
+    body{
+    background: url(images\ \(1\).jpeg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .container, .container2{
+        width: 350px;
+    }
 }
